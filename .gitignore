@@ -1,0 +1,87 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Gradio cache and temporary files
+gradio/
+gradio_cache/
+*.gradio
+
+# Audio files
+*.mp3
+*.wav
+
+# Environment variables
+.env
+
+# Logs and debug files
+*.log
+*.out
+*.err
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Test and coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+*.py,cover
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.save
+
+# Backup files
+*.~*
+*.sublime-workspace
+*.sublime-project
+
+# Ignore any other audio or media files
+*.ogg
+*.flac
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# History files
+.history/
