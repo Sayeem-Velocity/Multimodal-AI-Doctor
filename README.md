@@ -1,7 +1,8 @@
-# AI Doctor
+# Multimodal AI Doctor – An Agentic AI Project
 
-**AI Doctor** is a multimodal assistant built with **Gradio**, **Groq APIs**, and **ElevenLabs**.
-It allows users to record patient voice, upload medical-related images, and receive a concise **doctor-style spoken response**.
+**Multimodal AI Doctor** is an **agentic multimodal assistant** built with **Gradio**, **Groq APIs**, and **ElevenLabs**.
+It combines **speech, vision, and reasoning** through a series of cooperating LLMs, simulating how a real doctor listens, observes, and responds concisely.
+The system integrates **voice input, image analysis, clinical reasoning, and voice output** into a single pipeline.
 
 ---
 
@@ -29,6 +30,20 @@ It allows users to record patient voice, upload medical-related images, and rece
 ├── images/                   # Folder for saving test/sample images
 └── README.md                 # Documentation
 ```
+
+---
+
+## Agentic AI Workflow
+
+The system uses **multiple LLM agents** to process multimodal input step by step:
+
+1. **Symptom Agent** – extracts structured meaning from patient speech (via Whisper transcription).
+2. **Vision Agent** – analyzes uploaded medical images (X-ray, MRI, scan).
+3. **Reasoning Agent** – integrates speech and image findings into a medical interpretation.
+4. **Response Agent** – formats the answer in a concise, empathetic, doctor-style tone (≤ 2 sentences).
+5. **Voice Agent** – delivers the response using ElevenLabs (WAV, fallback gTTS).
+
+This makes the project an **agentic AI pipeline**, where multiple specialized models cooperate to mimic a doctor’s diagnostic process.
 
 ---
 
@@ -66,7 +81,7 @@ It allows users to record patient voice, upload medical-related images, and rece
 
 4. Install FFmpeg (if not already installed):
 
-   * Windows: Download from [https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/) and add `bin/` to PATH
+   * Windows: [Download builds](https://www.gyan.dev/ffmpeg/builds/) and add `bin/` to PATH
    * Linux (Debian/Ubuntu): `sudo apt install ffmpeg`
    * macOS (Homebrew): `brew install ffmpeg`
 
@@ -130,7 +145,7 @@ http://127.0.0.1:7860
 
 ## Notes
 
-* ElevenLabs free-tier accounts may not allow **WAV output** or certain custom voices. In that case, the code automatically falls back to **MP3** output with a safe built-in voice.
+* ElevenLabs free-tier accounts may not allow WAV output or certain custom voices. In that case, the code automatically falls back to MP3 output with a safe built-in voice.
 * Ensure FFmpeg is correctly installed; otherwise, audio export with pydub will fail.
 * Gradio will automatically handle playback of both WAV and MP3 outputs.
 
@@ -140,7 +155,7 @@ http://127.0.0.1:7860
 
 For questions, issues, or collaboration, please contact:
 
-**[sayeem26s@gmail.com](mailto:sayeem26s@gmail.com)**
+**Email:** [sayeem26s@gmail.com](mailto:sayeem26s@gmail.com)
 **LinkedIn:** [https://www.linkedin.com/in/s-m-shahriar-26s/](https://www.linkedin.com/in/s-m-shahriar-26s/)
 
 ---
