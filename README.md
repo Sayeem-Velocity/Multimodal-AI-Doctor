@@ -1,3 +1,5 @@
+---
+
 # AI Doctor
 
 **AI Doctor** is a multimodal assistant built with **Gradio**, **Groq APIs**, and **ElevenLabs**.
@@ -28,6 +30,26 @@ It allows users to record patient voice, upload medical-related images, and rece
 ├── .gitignore                # Ignore venv, __pycache__, .env, etc.
 ├── images/                   # Folder for saving test/sample images
 └── README.md                 # Documentation
+```
+
+---
+
+## System Workflow Diagram
+
+```mermaid
+flowchart TD
+    A[Patient Voice] --> B[Whisper Large v3 (Groq)]
+    B --> C[Voice-to-Text Transcription]
+
+    D[Medical Image] --> E[Llama-4 Scout (Groq)]
+    E --> F[Vision Analysis]
+
+    C --> G[Multimodal Reasoning]
+    F --> G
+
+    G --> H[Doctor Response (Text)]
+    H --> I[ElevenLabs TTS / gTTS]
+    I --> J[Doctor Response (Voice)]
 ```
 
 ---
@@ -130,7 +152,7 @@ http://127.0.0.1:7860
 
 ## Notes
 
-* ElevenLabs free-tier accounts may not allow **WAV output** or certain custom voices. In that case, the code automatically falls back to **MP3** output with a safe built-in voice.
+* ElevenLabs free-tier accounts may not allow WAV output or certain custom voices. In that case, the code automatically falls back to MP3 output with a safe built-in voice.
 * Ensure FFmpeg is correctly installed; otherwise, audio export with pydub will fail.
 * Gradio will automatically handle playback of both WAV and MP3 outputs.
 
@@ -140,7 +162,9 @@ http://127.0.0.1:7860
 
 For questions, issues, or collaboration, please contact:
 
-**[sayeem26s@gmail.com](mailto:sayeem26s@gmail.com)**
+**Email:** [sayeem26s@gmail.com](mailto:sayeem26s@gmail.com)
 **LinkedIn:** [https://www.linkedin.com/in/s-m-shahriar-26s/](https://www.linkedin.com/in/s-m-shahriar-26s/)
 
 ---
+
+Would you like me to also add a **Future Improvements** section (like multi-agent reasoning, patient record storage, or HIPAA compliance) so it looks more research/professional?
