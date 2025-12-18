@@ -6,7 +6,7 @@ A multimodal AI-powered medical assistant that combines voice recognition, compu
 
 ## Demo Video
 
-https://github.com/Sayeem-Velocity/Multimodal-AI-Doctor/raw/main/AI%20Doctor.mp4
+<video src="https://github.com/Sayeem-Velocity/Multimodal-AI-Doctor/raw/main/AI%20Doctor.mp4" autoplay loop muted playsinline width="100%"></video>
 
 ---
 
