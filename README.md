@@ -6,15 +6,9 @@ A multimodal AI-powered medical assistant that combines voice recognition, compu
 
 ## Demo Video
 
-https://github.com/Sayeem-Velocity/Multimodal-AI-Doctor/assets/AI-Doctor.mp4
+For a complete demonstration of the working principle and features, watch the demo video:
 
-> Note: If the video does not play above, please watch it here: [Download Demo Video](https://github.com/Sayeem-Velocity/Multimodal-AI-Doctor/raw/main/AI%20Doctor.mp4)
-
-To embed the video properly on GitHub:
-1. Go to the repository on GitHub
-2. Click "Edit" on this README
-3. Drag and drop the "AI Doctor.mp4" file into the editor
-4. GitHub will generate a proper video embed link
+[Download Demo Video](https://github.com/Sayeem-Velocity/Multimodal-AI-Doctor/raw/main/AI%20Doctor.mp4)
 
 ---
 
