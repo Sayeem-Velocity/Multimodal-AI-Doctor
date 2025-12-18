@@ -321,15 +321,15 @@ def process_inputs(audio_filepath, image_filepath):
 
 
 # ---------- UI ----------
-with gr.Blocks(css=CUSTOM_CSS, title="AI Doctor", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(css=CUSTOM_CSS, title="HealthVerse AI", theme=gr.themes.Soft()) as demo:
     # floating orbs
     gr.HTML('<div class="bg-orb"></div><div class="bg-orb-2"></div><div class="bg-orb-3"></div>')
 
     with gr.Column():
         gr.HTML("""
         <div style="text-align:center; margin-top:10px; position:relative; z-index:2;">
-          <div id="app-title">AI Doctor</div>
-          <div id="app-subtitle">AI Doctor</div>
+          <div id="app-title">HealthVerse AI</div>
+          <div id="app-subtitle">HealthVerse AI</div>
         </div>
         """)
 
@@ -353,7 +353,7 @@ with gr.Blocks(css=CUSTOM_CSS, title="AI Doctor", theme=gr.themes.Soft()) as dem
     <div class="fab">
       <div class="pill">
         <span class="dot"></span>
-        <strong>AI Doctor</strong>
+        <strong>HealthVerse AIr</strong>
         <span style="opacity:.8;">is listening</span>
       </div>
     </div>
